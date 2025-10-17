@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_crowdfunding/views/screen_home.dart';
+import 'package:flutter_crowdfunding/component/bottom_nav.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Dapps',
+      debugShowCheckedModeBanner: false,
+      title: 'DeFund',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-        ),
+        useMaterial3: true,
       ),
-      home: ScreenHome(),
+      home: ScreenBottomNav(),
     );
   }
 }

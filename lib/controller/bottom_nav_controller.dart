@@ -10,7 +10,7 @@ class BottomNavController extends GetxController {
     pageController.jumpToPage(index);
   }
 
-  void onPageChanget(int index) {
+  void onPageChanged(int index) {
     currentIndex.value = index;
   }
 }
